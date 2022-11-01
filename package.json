@@ -4,6 +4,7 @@
   "version": "0.1.1",
   "description": "Initialiser for nodeiflux templates",
   "main": "index.ts",
+  "repository": "github:nodeiflux/templates",
   "private": false,
   "publishConfig": {
     "access": "public"
