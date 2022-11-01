@@ -5,11 +5,9 @@ import { createNodeiflux } from './lib'
 import * as args from './lib/args'
 import * as prompt from './lib/prompt'
 
-const templates = [
-  'express'
-]
-
 async function main () {
+  const templates = require('./lib/templates')
+
   let { template, destination } = args.parse(process.argv)
   if (!template) template = await prompt.template(templates)
 
