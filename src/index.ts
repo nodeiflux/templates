@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import { exit } from 'node:process'
+import ora from 'ora'
 import { createNodeiflux } from './lib'
 import * as args from './lib/args'
 import * as prompt from './lib/prompt'
-import ora from 'ora'
 
-/* TODO: Find a way to generate this */
 const templates = [
   'express'
 ]
