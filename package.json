@@ -15,7 +15,7 @@
     "node": ">=16"
   },
   "bin": {
-    "create-nodeiflux": "./bin.js"
+    "create-nodeiflux": "./bin/index.js"
   },
   "scripts": {
     "dev": "run-s -cs dev:*",
