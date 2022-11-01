@@ -1,2 +1,2 @@
 # templates
-A collection of templates for the community
+A collection of templates for the Nodeiflux Discord community

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "create-nodeiflux",
+  "version": "0.1.0",
+  "description": "Initialiser for nodeiflux templates",
+  "main": "index.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin/index.js"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "bin": {
+    "create-nodeiflux": "./bin.js"
+  },
+  "scripts": {
+    "dev": "run-s -cs dev:*",
+    "dev:temp": "tsx src/index.ts -p temp",
+    "dev:clean": "npx rimraf temp",
+    "test": "tsx src/index.ts express -p temp",
+    "build": "tsx ./build.mts",
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "nodeiflux",
+    "template",
+    "templates",
+    "express"
+  ],
+  "author": "Nicholai Nissen <nicholainissen@gmail.com> (https://nicholai.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "degit": "npm:tiged@2.12.3",
+    "enquirer": "^2.3.6",
+    "ora": "^6.1.2",
+    "rxjs": "^7.5.7",
+    "yargs": "^17.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@hyrious/esbuild-plugin-commonjs": "^0.2.1",
+    "@types/degit": "^2.8.3",
+    "@types/node": "^18.11.8",
+    "@types/yargs": "^17.0.13",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "esbuild": "^0.15.12",
+    "husky": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "tsx": "^3.11.0",
+    "typescript": "^4.8.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
