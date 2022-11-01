@@ -24,7 +24,8 @@
     "test": "tsx src/index.ts express -p temp",
     "build": "tsx ./build.mts",
     "commit": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "nodeiflux",
