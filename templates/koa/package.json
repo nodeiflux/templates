@@ -4,22 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js | pino-colada"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@koa-better-modules/joi-router": "^10.1.0",
     "koa": "^2.13.4",
     "koa-joi-router": "^8.0.0",
     "koa-json": "^2.0.2",
-    "koa-pino-logger": "^4.0.0"
+    "koa-pino-logger": "^4.0.0",
+    "neon-env": "^0.1.1",
+    "pino": "^8.7.0"
   },
   "devDependencies": {
     "@types/koa": "^2.13.5",
     "@types/koa-joi-router": "^8.0.4",
     "@types/koa-pino-logger": "^3.0.1",
     "hyperid": "^3.0.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "pino-colada": "^2.2.2"
   }
 }
