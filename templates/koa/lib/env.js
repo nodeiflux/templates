@@ -1,22 +1,22 @@
 'use strict'
 
-const { createEnv } = require('neon-env')
+const { load } = require('ts-dotenv')
+const { string } = require('yargs')
 
-const env = createEnv({
+const env = load({
   PORT: {
-    type: "number",
+    type: Number,
     default: 3000
   },
   NODE_ENV: {
-    type: 'string',
-    choices: ['development', 'production'],
+    type: ['development', 'production'],
     default: 'development'
   },
   LOG_LEVEL: {
-    type: 'string',
-    choices: ['silent', 'trace', 'debug', 'info', 'warn', 'error', 'fatal'],
+    type: ['silent', 'trace', 'debug', 'info', 'warn', 'error', 'fatal'],
     default: 'info'
-  }
+  },
+  MONGO_URI: String
 })
 
 module.exports = { env }
