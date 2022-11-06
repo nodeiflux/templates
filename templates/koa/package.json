@@ -15,8 +15,8 @@
     "koa": "^2.13.4",
     "koa-joi-router": "^8.0.0",
     "koa-json": "^2.0.2",
-    "koa-pino-logger": "^4.0.0",
     "pino": "^8.7.0",
+    "pino-http": "^8.2.1",
     "ts-dotenv": "^0.8.3"
   },
   "devDependencies": {
