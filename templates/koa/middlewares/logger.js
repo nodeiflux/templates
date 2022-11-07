@@ -15,11 +15,8 @@ function createLogMw (logger) {
    * @param {Context} ctx
    */
   return async function pinoLogger (ctx, next) {
-    const startAt = process.hrtime()
-
-    const id = createId()
-    ctx.state.id = id
-    ctx.set('X-Request-Id', id)
+    const finishTiming = timeResponse(ctx)
+    const id = requestId(ctx)
 
     ctx.log = logger?.child({ id })
     ctx.log.info({
@@ -27,10 +24,8 @@ function createLogMw (logger) {
     }, 'request')
 
     await next()
-    const diff = process.hrtime(startAt)
-    const responseTime = diff[0] * 1e3 + diff[1] * 1e-6 /* round precise time */
-    ctx.set('X-Response-Time', responseTime)
-    ctx.log.warn(ctx.get('content-type'))
+    const responseTime = finishTiming(ctx)
+
     ctx.log.info({
       ...requestInfo(ctx),
       statusCode: ctx.status,
@@ -52,6 +47,32 @@ function requestInfo (ctx) {
     method: ctx.method,
     url: ctx.url
   }
+}
+
+/**
+ *
+ * @param {Context} ctx
+ */
+function timeResponse (ctx) {
+  const startAt = process.hrtime()
+  return function finishTiming () {
+    const diff = process.hrtime(startAt)
+    const responseTime = diff[0] * 1e3 + diff[1] * 1e-6 /* convert from precise time */
+
+    ctx.set('X-Response-Time', `${responseTime.toFixed(2)}`)
+    return responseTime
+  }
+}
+
+/**
+ *
+ * @param {Context} ctx
+ */
+function requestId (ctx) {
+  const id = createId()
+  ctx.state.id = id
+  ctx.set('X-Request-Id', id)
+  return id
 }
 
 module.exports = {
