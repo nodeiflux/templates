@@ -1,0 +1,30 @@
+{
+  "name": "@nodeiflux/koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js | pino-colada"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@curveball/http-errors": "^0.4.1",
+    "@koa-better-modules/joi-router": "^10.1.0",
+    "koa": "^2.13.4",
+    "koa-joi-router": "^8.0.0",
+    "koa-json": "^2.0.2",
+    "pino": "^8.7.0",
+    "pino-http": "^8.2.1",
+    "ts-dotenv": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa-joi-router": "^8.0.4",
+    "@types/koa-pino-logger": "^3.0.1",
+    "hyperid": "^3.0.1",
+    "nodemon": "^2.0.20",
+    "pino-colada": "^2.2.2"
+  }
+}
