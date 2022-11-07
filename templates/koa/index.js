@@ -23,6 +23,6 @@ async function main () {
 }
 
 main().catch(error => {
-  logger.error({ name, err: error })
+  logger.fatal({ name, err: error })
   process.exit(1)
 })
