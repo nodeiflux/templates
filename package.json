@@ -37,10 +37,13 @@
   "author": "Nicholai Nissen <nicholainissen@gmail.com> (https://nicholai.dev)",
   "license": "MIT",
   "dependencies": {
+    "conf": "^10.2.0",
     "degit": "npm:tiged@2.12.3",
     "enquirer": "^2.3.6",
+    "got": "^12.5.2",
     "ora": "^6.1.2",
     "rxjs": "^7.5.7",
+    "tar": "^6.1.12",
     "yargs": "^17.6.0"
   },
   "devDependencies": {
