@@ -1,7 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 18 + Strictest",
-  "exclude": ["bin/*", "./build.mjs", "./commitlint.config.js"],
+  "exclude": [
+    "bin/*",
+    "templates/*",
+    "./build.mjs",
+    "./commitlint.config.js"
+  ],
   "compilerOptions": {
     "lib": [
       "es2022"
