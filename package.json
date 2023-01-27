@@ -2,16 +2,12 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "create-nodeiflux",
   "version": "0.2.0",
-  "description": "Initialiser for nodeiflux templates",
-  "main": "index.ts",
+  "description": "Nodeiflux templates",
   "repository": "github:nodeiflux/templates",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "bin/index.js"
-  ],
   "engines": {
     "node": ">=16"
   },
@@ -19,11 +15,6 @@
     "create-nodeiflux": "./bin/index.js"
   },
   "scripts": {
-    "dev": "run-s -cs dev:*",
-    "dev:temp": "tsx src/index.ts -p temp",
-    "dev:clean": "npx rimraf temp",
-    "test": "tsx src/index.ts express -p temp",
-    "build": "tsx ./build.mts",
     "commit": "cz",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
@@ -37,11 +28,6 @@
   "author": "Nicholai Nissen <nicholainissen@gmail.com> (https://nicholai.dev)",
   "license": "MIT",
   "dependencies": {
-    "degit": "npm:tiged@2.12.3",
-    "enquirer": "^2.3.6",
-    "ora": "^6.1.2",
-    "rxjs": "^7.5.7",
-    "yargs": "^17.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
