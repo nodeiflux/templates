@@ -1,9 +1,14 @@
-/* eslint no-console:0 "@typescript-eslint/no-var-requires": 0 */
-import app from './app'
 import { env } from './env'
+import { createApp } from './app'
+import routes from './routes'
 
-console.log('⚾ Curveball v%s', require('@curveball/core/package.json').version)
+async function main (): Promise<void> {
+  const app = createApp(routes)
+  app.listen(env.PORT)
+}
 
-app.listen(env.PORT)
-
-console.log(`Running on port ${env.PORT}`)
+main()
+  .then(() => {})
+  .catch(error => {
+    throw new Error('Unhandled error in main()', { cause: error })
+  })

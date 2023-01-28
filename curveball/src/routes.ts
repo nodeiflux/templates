@@ -1,6 +1,9 @@
 import router from '@curveball/router'
-import homeController from './home/controller'
+
+/* Router handles providing dependencies for the default case */
+import Home from './home/controller'
+import * as HomeService from './home/service'
 
 export default [
-  router('/', homeController)
+  router('/', new Home(HomeService))
 ]

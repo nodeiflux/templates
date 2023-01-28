@@ -1,16 +1,19 @@
 import Controller from '@curveball/controller'
 import { Context } from '@curveball/core'
-import * as HomeService from './service'
 
-class HomeController extends Controller {
-
-  get (ctx: Context) {
-
-    ctx.response.type = 'application/json'
-    ctx.response.body = HomeService.greet()
-
-  }
-
+interface HomeService {
+  greet: () => Promise<{ message: string }>
 }
 
-export default new HomeController()
+export default class HomeController extends Controller {
+  constructor (
+    private readonly service: HomeService
+  ) {
+    super()
+  }
+
+  get (ctx: Context): void {
+    ctx.response.type = 'application/json'
+    ctx.response.body = this.service.greet()
+  }
+}
