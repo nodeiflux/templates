@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2020",
+        "target": "es2022",
+
 
         "strict": true,
         "noFallthroughCasesInSwitch": true,
@@ -19,7 +20,7 @@
         },
         "lib": [
           "DOM",
-          "ES2020"
+          "ES2022"
         ],
         "declaration": true
     },
