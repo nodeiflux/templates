@@ -2,7 +2,6 @@
 
 A collection of templates for and by the Nodeiflux Discord community
 
-[![Npm version](https://img.shields.io/npm/v/create-nodeiflux)](https://www.npmjs.com/package/create-nodeiflux)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -11,11 +10,17 @@ A collection of templates for and by the Nodeiflux Discord community
 ## Usage
 
 ```sh
-npx create-nodeiflux@latest [template] [-p path]
+npx degit nodeiflux/templates/<template name> [optional folder name]
 ```
 
-With `npm init`:
+Example, using express:
 
 ```sh
-npm init nodeiflux -- [template] [-p path]
+npx degit nodeiflux/templates/express
+```
+
+Example, using curveball in a specific folder:
+
+```sh
+npx degit nodeiflux/templates/curveball my-cool-api
 ```
