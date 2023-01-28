@@ -12,8 +12,8 @@ export default class HomeController extends Controller {
     super()
   }
 
-  get (ctx: Context): void {
+  async get (ctx: Context): Promise<void> {
     ctx.response.type = 'application/json'
-    ctx.response.body = this.service.greet()
+    ctx.response.body = await this.service.greet()
   }
 }
