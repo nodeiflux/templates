@@ -5,7 +5,7 @@ This template uses Curveball, a TypeScript-first library inspired by Koa.
 To get started, run:
 
 ```sh
-npx degit nodeiflux/templates/curveball`
+npx degit nodeiflux/templates/curveball
 ```
 
 To start developing, run:
