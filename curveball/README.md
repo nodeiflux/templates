@@ -1,28 +1,28 @@
-Curveball Starter Template
-==========================
+# Curveball template
 
-Hit the ground running with a minimal boilerplate for a Curveball application.
+This template uses Curveball, a TypeScript-first library inspired by Koa.
 
+To get started, run:
 
-What's included
----------------
+```sh
+npx degit nodeiflux/templates/curveball`
+```
 
-This package contains a basic set up for that will be needed for most Curveball
-applications, and comes with a suggested application structure.
+To start developing, run:
 
+```sh
+npm run dev
+```
 
-Getting started
----------------
+This will host the app on <http://localhost:8000>. You can configure this port with environment variables or .env file.
 
-Copy this repository
+To build for production:
 
-    git clone https://github.com/curveball/starter <project_name>
+```sh
+npm run build
+```
 
-Build and run the project
+## Further information
 
-    cd <project_name>
-    npm i
-    npm run build
-    npm start
-
-After this, open `http://localhost:8500` to see your application in action.
+- Curveball: <https://curveballjs.org/>
+- ts-dotenv: <https://npmjs.com/package/ts-dotenv>
