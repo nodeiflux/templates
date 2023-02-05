@@ -1,5 +1,6 @@
 import { env } from './env'
 import { createApp } from './app'
+import { makeLogger } from 'pino-curveball'
 import routes from './routes'
 
 async function main (): Promise<void> {
@@ -7,8 +8,10 @@ async function main (): Promise<void> {
   app.listen(env.PORT)
 }
 
+const logger = makeLogger('index')
+
 main()
-  .then(() => {})
+  .then(() => logger.info('Application running'))
   .catch(error => {
-    throw new Error('Unhandled error in main()', { cause: error })
+    logger.fatal(new Error('Unhandled error in main()', { cause: error }))
   })

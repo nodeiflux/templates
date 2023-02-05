@@ -26,3 +26,7 @@ npm run build
 
 - Curveball: <https://curveballjs.org/>
 - ts-dotenv: <https://npmjs.com/package/ts-dotenv>
+
+## License
+
+MIT: <https://nicholai.mit-license.org>
