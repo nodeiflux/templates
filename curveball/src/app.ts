@@ -2,7 +2,7 @@ import { Application } from '@curveball/core'
 import type { Middleware } from '@curveball/core'
 import problem from '@curveball/problem'
 import bodyParser from '@curveball/bodyparser'
-import { pinoLogger } from './logger'
+import { pinoLogger } from 'pino-curveball'
 
 export const createApp = (routes: Middleware[]): Application => {
   const app = new Application()

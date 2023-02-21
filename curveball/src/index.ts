@@ -3,6 +3,11 @@ import { createApp } from './app'
 import { makeLogger } from 'pino-curveball'
 import routes from './routes'
 
+console.log(
+  (new Date()).toTimeString().split(' ')[0], /* Time stamp */
+  '⚾ @nodeiflux/curveball Starting application'
+)
+
 async function main (): Promise<void> {
   const app = createApp(routes)
   app.listen(env.PORT)
