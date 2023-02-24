@@ -29,12 +29,13 @@
   },
   "homepage": "https://github.com/nodeiflux/templates#readme",
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.14.1",
+    "mongodb-memory-server-core": "^8.11.5",
     "npm-run-all": "^4.1.5",
     "pino-colada": "^2.2.2",
     "ts-standard": "^12.0.2",
-    "tsx": "^3.12.2",
-    "typescript": "^4.9.4"
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
   },
   "types": "dist/",
   "nyc": {
@@ -43,16 +44,18 @@
     ]
   },
   "dependencies": {
-    "@curveball/accesslog": "^0.3.0",
-    "@curveball/bodyparser": "^0.5.0",
-    "@curveball/controller": "^0.4.0",
-    "@curveball/core": "^0.20.0",
-    "@curveball/problem": "^0.4.0",
+    "@curveball/accesslog": "^0.4.0",
+    "@curveball/bodyparser": "^0.6.1",
+    "@curveball/controller": "^0.5.0",
+    "@curveball/core": "^0.21.1",
+    "@curveball/problem": "^0.5.0",
     "@curveball/router": "^0.5.0",
+    "@curveball/session": "^0.9.0",
     "@ladjs/graceful": "^3.2.1",
-    "nanoid": "^3.3.4",
-    "pino": "^8.8.0",
-    "pino-curveball": "^1.1.2",
-    "ts-dotenv": "^0.9.0"
+    "mongoose": "^6.10.0",
+    "nanoid": "^4.0.1",
+    "pino": "^8.11.0",
+    "pino-curveball": "^1.1.3",
+    "ts-dotenv": "^0.9.1"
   }
 }
