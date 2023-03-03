@@ -51,13 +51,13 @@
     "@curveball/problem": "^0.5.0",
     "@curveball/router": "^0.5.0",
     "@curveball/session": "^0.9.0",
-    "@ladjs/graceful": "^3.2.1",
+    "@ladjs/graceful": "^3.2.2",
     "argon2": "^0.30.3",
     "mongoose": "^7.0.0",
     "nanoid": "^4.0.1",
     "pino": "^8.11.0",
     "pino-curveball": "^1.1.3",
-    "ts-dotenv": "^0.9.1"
+    "ts-dotenv": "^0.9.1",
     "zod": "^3.20.6"
   }
 }

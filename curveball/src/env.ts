@@ -12,5 +12,9 @@ export const env = load({
       'production' as const
     ],
     default: 'development'
+  },
+  MONGO_URI: {
+    optional: true,
+    type: String
   }
 })
