@@ -1,0 +1,19 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [
+      "en-GB",
+      "softwareTerms",
+      "typescript",
+      "node",
+      "npm"
+    ],
+    "words": [
+      "curveball",
+      "pino",
+      "bodyparser"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
