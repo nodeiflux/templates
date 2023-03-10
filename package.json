@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "create-nodeiflux",
-  "version": "0.2.0",
+  "name": "@nodeiflux/templates",
+  "version": "0.3.0",
   "description": "Nodeiflux templates",
   "repository": "github:nodeiflux/templates",
   "private": false,
@@ -11,13 +11,10 @@
   "engines": {
     "node": ">=16"
   },
-  "bin": {
-    "create-nodeiflux": "./bin/index.js"
-  },
   "scripts": {
     "commit": "cz",
-    "prepare": "husky install",
-    "prepublishOnly": "npm run build"
+    "plop": "plop",
+    "prepare": "husky install"
   },
   "keywords": [
     "nodeiflux",
@@ -39,6 +36,7 @@
     "esbuild": "^0.15.12",
     "husky": "^8.0.1",
     "npm-run-all": "^4.1.5",
+    "plop": "^3.1.2",
     "ts-standard": "^12.0.2",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4"

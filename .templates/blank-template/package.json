@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@nodeiflux/templates",
+  "version": "1.0.0",
+  "description": "{{ dashCase name }} template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "github:nodeiflux/templates",
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "nodeiflux",
+    "template",
+    "boilerplate",
+    "{{ dashCase name }}"
+  ],
+  "license": "MIT"
+}
