@@ -28,12 +28,17 @@ npx degit nodeiflux/templates/curveball my-cool-api
 ## Templates
 
 These are the current templates:
-- express-minimal
-  - smallest *useable* express template
-  - not relevant for most people
-  - ~~unless you have specific requirements and need something to build from, quickly~~
-- curveball
-  - a reference curveball implementation
+<details>
+  <summary>express-minimal (click to expand)</summary >
+  Smallest useable express template <br />
+  This template not relevant for most people. 
+  Unless you have specific requirements and need something to build from, quickly
+</details>
+<details>
+  <summary>curveball</summary>
+  a reference curveball implementation
+</details>
+
 ## Contributing
 We welcome contributions with open arms! Please be mindful to follow our [Code of Conduct](code_of_conduct.md)
 
