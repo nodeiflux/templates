@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "repository": "github:nodeiflux/templates",
+  "author": "Nicholai Nissen <nicholainissen@gmail.com> (https://nicholai.dev)",
   "engines": {
     "node": ">=16"
   },
