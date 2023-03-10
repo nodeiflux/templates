@@ -4,6 +4,7 @@ A collection of templates for and by the Nodeiflux Discord community
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Node version ≥ 16](https://img.shields.io/badge/node-%E2%89%A516-green)](https://nodejs.org)
 
 ---
 
