@@ -8,7 +8,7 @@ export default function (/** @type { import('plop').NodePlopAPI } */ plop) {
     }],
     actions: [{
       type: 'addMany',
-      destination: '{{name}}',
+      destination: '{{ dashCase name }}',
       base: '.templates/blank-template/',
       templateFiles: ['.templates/blank-template/**.*']
     }]
