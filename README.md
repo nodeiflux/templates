@@ -24,3 +24,12 @@ Example, using curveball in a specific folder:
 ```sh
 npx degit nodeiflux/templates/curveball my-cool-api
 ```
+
+## Contributing
+We welcome contributions with open arms! Please be mindful to follow our [Code of Conduct](code_of_conduct.md)
+
+If you wish to introduce a new template, please use plop to scaffold it:
+
+```sh
+npm run plop
+```
