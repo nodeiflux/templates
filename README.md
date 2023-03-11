@@ -47,5 +47,5 @@ We welcome contributions with open arms! Please be mindful to follow our [Code o
 If you wish to introduce a new template, please use plop to scaffold it:
 
 ```sh
-npm run plop
+npx plop
 ```
