@@ -10,7 +10,10 @@ export default function (/** @type { import('plop').NodePlopAPI } */ plop) {
       type: 'addMany',
       destination: '{{ dashCase name }}',
       base: '.templates/blank-template/',
-      templateFiles: ['.templates/blank-template/**.*']
+      templateFiles: [
+        '.templates/blank-template/**.*',
+        '.templates/blank-template/.*'
+      ]
     }]
   })
 }
