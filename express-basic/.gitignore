@@ -106,3 +106,4 @@ dist
 # Project specific ignores
 bin/
 temp/
+*.sqlite
