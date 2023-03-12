@@ -19,6 +19,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-promise-router": "^4.1.1",
     "sequelize": "^6.29.3",
