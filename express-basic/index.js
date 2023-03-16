@@ -34,6 +34,11 @@ function initialiseDatabase (env, dbUri) {
 }
 
 if (process.env.NODE_ENV !== 'test') main()
+  .then(() => console.info('Application running'))
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })
 
 module.exports = {
   main
