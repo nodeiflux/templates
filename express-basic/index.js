@@ -12,13 +12,15 @@ const port = process.env.PORT ?? 8000
 async function main () {
   console.log('Application starting')
   const database = await initialiseDatabase(process.env.NODE_ENV, process.env.DB_URI)
-  app.load(routes)
+
+  app.load(routes(database))
     .listen(port, () => {
       console.info(`Application listening on port ${port}`)
     })
     .on('error', error => {
       console.error(error)
     })
+
   await synchroniseDatabase(process.env.NODE_ENV, database)
 }
 
