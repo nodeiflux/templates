@@ -33,6 +33,18 @@ function initialiseDatabase (env, dbUri) {
   return db.createSQLiteDatabase()
 }
 
+/**
+ * Synchronise tables in database
+ * @param {'production'|'test'|'development'} env Node environment
+ * @param {import('sequelize').Sequelize} db Sequelize instance
+ * @return {Promise}
+ */
+function synchroniseDatabase (env, db) {
+  if (env === 'production') return db.sync()
+  if (env === 'test') return db.sync({ force: true })
+  return db.sync({ alter: true })
+}
+
 if (process.env.NODE_ENV !== 'test') main()
   .then(() => console.info('Application running'))
   .catch(error => {
