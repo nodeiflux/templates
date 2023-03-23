@@ -19,6 +19,7 @@ async function main () {
     .on('error', error => {
       console.error(error)
     })
+  await synchroniseDatabase(process.env.NODE_ENV, database)
 }
 
 /**
